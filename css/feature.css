@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+}
+
+nav {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex: 4 1 1;
+    grid-template-columns: 5fr 1fr 1fr;
+    background-color: black;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid black;
+     
+}
+.product > p {
+    font-size: clamp(2px, 2vw, 16px);
+}
+
+.product > img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto; 
+}
+
+img {
+    height: 250px;  
+}
+
+nav > .buttons {
+    background-color:black;
+    font-size: 15px;
+    border: 0;
+    text-align: center;
+    align-content: center;
+    height: 100px;
+   
+}
+nav > .buttons > a {
+    text-decoration: none;
+    color: white;
+}
+
+nav > p {
+    color: white;
+    text-align: center;
+    align-content: center;
+    font-size: 31px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 12px;
+    gap: 12px;
+    background-color: white;
+}
+.grid > div {
+    background-color: gray;
+    font-size: clamp(14px, 2vw, 16px);
+    width: 100%; /* Ensures responsiveness */
+    /*max-width: 400px;  Limits maximum size */
+    padding: 0;
+    border: 1px solid #ddd;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f9f9f9;
+    border-radius: 4px;
+}
+.grid img {
+    width: 100%;
+    max-width: 150px; /* Limits image size */
+    height: auto;
+}
+.grid p {
+    font-size: 14px; /* Adjust font size */
+    margin: 12px;
+    word-wrap: break-word; /* Prevents text overflow */
+    padding: 0;
+}
+.grid button {
+    padding: 5px 10px;
+    font-size: 12px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 4px;
+}
+.grid > .product {
+    min-width: fit-content;
+}
+.grid > .product > .remove_from_cart {
+    background-color: black;
+    color: white;
+    width: 60%;
+    margin-bottom: 12px;
+}
+.grid > .product > .add_to_cart {
+    width: 60%;
+    margin-bottom: 12px;
+}
+
+.hero-wrapper {
+    height: 350px;
+}
+.hero-wrapper {
+    width: 100%;
+    min-height: 120px;
+    height: 100%;
+    background-image: url('../asset/ververyfinal.png');
+    background-size: cover;
+}
+main {
+    display: grid;
+    grid-template-columns: 4fr 1fr; 
+}
+aside {
+    border: 0;
+    padding-top: 12px;
+    border: 1px solid black;
+    background-color: #228B22;
+
+}
+
+footer {
+    height: 120px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    align-content: center;
+}
+h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+img {
+    margin: 0;
+    border: 2px solid black;
+    aspect-ratio: 3/4;
+}
+.total-cart-price {
+    margin-top: 12px;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    padding: 9px;
+    color: white;
+    background-color: black;
+}
+.list_of_items {
+    background-color: white;
+    padding: 2px;
+    color: black;
+    margin-bottom: 10px;
+    border-radius: 1px;
+    font-weight: bold;
+    font-family: 'Comfortaa';
+
+}
