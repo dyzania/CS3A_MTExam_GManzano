@@ -2,7 +2,7 @@
 const cart = {};
 
 // Function to add a product to the cart
-function addToCart(productName, productPrice) {
+function addToCart(productName, productPrice, imgSrc) {
     // If the product is already in the cart, increase quantity and update total price
     if (cart[productName]) {
         cart[productName].quantity += 1;
@@ -11,12 +11,22 @@ function addToCart(productName, productPrice) {
         // If the product is not in the cart, add it with an initial quantity of 1
         cart[productName] = {
             quantity: 1,
-            totalPrice: productPrice
+            totalPrice: productPrice,
+            image: imgSrc
         };
     }
     // Update the cart display after adding an item
     updateCartDisplay();
 }
+
+/* function addToCart(imageSrc) {
+    let cart = document.getElementById("cart-items");
+
+    // Create a new image element
+    let img = document.createElement("img");
+    img.src = imageSrc;
+    img.alt = "Cart Item";
+}*/
 
 // Function to remove a product from the cart
 function removeFromCart(productName, productPrice) {
@@ -52,11 +62,12 @@ function updateCartDisplay() {
 
     // Loop through the cart object and display each product
     for (let product in cart) {
-        const listItem = document.createElement('li');
+        const listItem = document.createElement('div');
         listItem.innerText = `${product} 
                             - Quantity: ${cart[product].quantity} 
                             - Total Product Price: Php ${cart[product].totalPrice.toFixed(2)}`;
         cartList.appendChild(listItem); // Add the item to the cart list
+      //  cart.appendChild(img);
     }
 
     // Calculate and display the total price
@@ -66,13 +77,26 @@ function updateCartDisplay() {
     const cartList = document.getElementById('products');
     cartList.innerHTML = ''; // Clear the current cart list
 
+    
+
     // Loop through the cart object and display each product
     for (let product in cart) {
-        const listItem = document.createElement('li');
-        listItem.innerText = `${product} 
+
+        const listItem = document.createElement('div');
+        listItem.innerText = `${product}
                              Quantity: ${cart[product].quantity} 
-                             Total Price: Php ${cart[product].totalPrice.toFixed(2)}`;
+                             Price: Php ${cart[product].totalPrice.toFixed(2)}`;
         listItem.classList.add("list_of_items");
+
+        const img = document.createElement('img');
+        img.src = cart[product].image;
+        img.alt = product;
+        img.style.width = "50%";
+        img.style.justifySelf="center";
+        img.style.height = "auto"// Adjust image size
+        img.style.marginTop = "10px"; // Space between image and text
+        listItem.appendChild(img);
+
         cartList.appendChild(listItem); // Add the item to the cart list
     }
     const totalPrice = calculateTotalPrice();

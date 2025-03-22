@@ -6,26 +6,23 @@
     <title>Feature</title>
     <script src="js/feature.js"></script>
     <link rel="stylesheet" href="css/feature.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Madimi+One&display=swap');
-    </style>
+    <link rel="stylesheet" href="css/fonts.css">
 
 </head>
 <body>
     <header>
         <nav>
-            <p style="font-family: Comfortaa">SOLE PHILIPPINES</p>
+            <p style="font-family: Oswald">SOLE PHILIPPINES</p>
             <div class="buttons "><a href="homepage.html">HOME</a></div>
             <div class="buttons"><a href="featurepage.html">FEATURE</a></div>
         </nav>
     </header>
-
-<main>
-    <div class="hero_products">
     <section class="hero-wrapper">
         <div class="hero"></div>
     </section>
+<main>
+    <div class="hero_products">
+
     
         <div class="container">
             <div class="feature">
@@ -40,84 +37,85 @@
             <div class="grid">
                 <div class="product">
                     <h4>Air Jordan 1 Low OG</h4>
-                    <img src="asset/AirJordan1LowOGObsdian_8260.png" alt="squeezy milky image" width="100%">
+                    <img src="asset/AirJordan1LowOGObsdian_8260.png" alt="Air Jordan 1 Low OG" width="100%">
                     <p>Price: Php 8260.00</p>
-                    <button class="add_to_cart" onclick="addToCart('Air Jordan 1 Low OG Obsidian', 8260.00)">Add to Cart</button>
-                    <button class="remove_from_cart" onclick="removeFromCart('Air Jordan 1 Low OG Obsidian', 8260.00)">Remove from Cart</button>
+                    <button class="add_to_cart" onclick="addToCart('Air Jordan 1 Low OG', 8260.00, 'asset/AirJordan1LowOGObsdian_8260.png')">Add to Cart</button>
+                    <button class="remove_from_cart" onclick="removeFromCart('Air Jordan 1 Low OG', 8260.00)">Remove from Cart</button>
                 </div>
                 <div class="product">
                     <h4>Air Jordan 1 Mid</h4>
-                    <img src="./asset/AirJordan1Mid_7375.png" alt="" width="100%">
-                    <p>Price: Php 30.00</p>
-                    <button class="add_to_cart" onclick="addToCart('Air Jordan 1 Mid', 7375.00)">Add to Cart</button>
+                    <img src="./asset/AirJordan1Mid_7375.png" alt="Air Jordan 1 Mid" width="100%">
+                    <p>Price: Php 7375.00</p>
+                    <button class="add_to_cart" onclick="addToCart('Air Jordan 1 Mid', 7375.00, 'asset/AirJordan1Mid_7375.png')">Add to Cart</button>
                     <button class="remove_from_cart" onclick="removeFromCart('Air Jordan 1 Mid', 73750.00)">Remove from Cart</button>
                 </div>
                 <div class="product">
                     <h4>Air Jordan 4 Retro</h4>
-                    <img src="./asset/AirJordan4Retro_12685.png" alt="squeezy milky image" width="100%">
-                    <p>Price: Php 30.00</p>
-                    <button class="add_to_cart" onclick="addToCart('Squeezy Milky', 30.00)">Add to Cart</button>
-                    <button class="remove_from_cart" onclick="removeFromCart('Squeezy Milky', 30.00)">Remove from Cart</button>
+                    <img src="./asset/AirJordan4Retro_12685.png" alt="Air Jordan 4 Retro image" width="100%">
+                    <p>Price: Php 12685.00</p>
+                    <button class="add_to_cart" onclick="addToCart('Air Jordan 4 Retro', 12685.00,'asset/AirJordan4Retro_12685.png')">Add to Cart</button>
+                    <button class="remove_from_cart" onclick="removeFromCart('Air Jordan 4 Retro', 12685.00)">Remove from Cart</button>
                 </div>
                 <div class="product">
-                    <h4>Squeezy Milky</h4>
-                    <img src="./asset/squeezy_milky.png" alt="squeezy milky image" width="100%">
-                    <p>Price: Php 30.00</p>
-                    <button class="add_to_cart" onclick="addToCart('Squeezy Milky', 30.00)">Add to Cart</button>
-                    <button class="remove_from_cart" onclick="removeFromCart('Squeezy Milky', 30.00)">Remove from Cart</button>
+                    <h4>Air Jordan 4 RM</h4>
+                    <img src="./asset/AirJordan4RM_8850.png" alt="Air Jordan 4 RM" width="100%">
+                    <p>Price: Php 8850.00</p>
+                    <button class="add_to_cart" onclick="addToCart('Air Jordan 4 RM', 8850.00, 'asset/AirJordan4RM_8850.png')">Add to Cart</button>
+                    <button class="remove_from_cart" onclick="removeFromCart('Air Jordan 4 RM', 8850.00)">Remove from Cart</button>
                 </div>
                 <div class="product">
-                    <h4>Squeezy Milky</h4>
-                    <img src="./asset/squeezy_milky.png" alt="squeezy milky image" width="100%">
-                    <p>Price: Php 30.00</p>
-                    <button class="add_to_cart" onclick="addToCart('Squeezy Milky', 30.00)">Add to Cart</button>
-                    <button class="remove_from_cart" onclick="removeFromCart('Squeezy Milky', 30.00)">Remove from Cart</button>
-                </div>
-                <div class="product"><h4>Squeezy Milky</h4>
-                    <img src="./asset/squeezy_milky.png" alt="squeezy milky image" width="100%">
-                    <p>Price: Php 30.00</p>
-                    <button class="add_to_cart" onclick="addToCart('Squeezy Milky', 30.00)">Add to Cart</button>
-                    <button class="remove_from_cart" onclick="removeFromCart('Squeezy Milky', 30.00)">Remove from Cart</button></div>
-                <div class="product">
-                    <h4>Squeezy Milky</h4>
-                    <img src="./asset/squeezy_milky.png" alt="squeezy milky image" width="100%">
-                    <p>Price: Php 30.00</p>
-                    <button class="add_to_cart" onclick="addToCart('Squeezy Milky', 30.00)">Add to Cart</button>
-                    <button class="remove_from_cart" onclick="removeFromCart('Squeezy Milky', 30.00)">Remove from Cart</button>
+                    <h4>Air Jordan 39</h4>
+                    <img src="./asset/AirJordan39_11800.png" alt="Air Jordan 39 image" width="100%">
+                    <p>Price: Php 11800.00</p>
+                    <button class="add_to_cart" onclick="addToCart('Air Jordan 39', 11800.00,'asset/AirJordan39_11800.png')">Add to Cart</button>
+                    <button class="remove_from_cart" onclick="removeFromCart('Air Jordan 39', 11800.00)">Remove from Cart</button>
                 </div>
                 <div class="product">
-                    <h4>Squeezy Milky</h4>
-                    <img src="./asset/squeezy_milky.png" alt="squeezy milky image" width="100%">
-                    <p>Price: Php 30.00</p>
-                    <button class="add_to_cart" onclick="addToCart('Squeezy Milky', 30.00)">Add to Cart</button>
-                    <button class="remove_from_cart" onclick="removeFromCart('Squeezy Milky', 30.00)">Remove from Cart</button>
+                    <h4>Air Jordan 6 Rings</h4>
+                    <img src="./asset/Jordan6Rings_10030.png" alt="Air Jordan 6 Rings" width="100%">
+                    <p>Price: Php 10030.00</p>
+                    <button class="add_to_cart" onclick="addToCart('Air Jordan 6 Rings', 10030.00,'asset/Jordan6Rings_10030.png' )">Add to Cart</button>
+                    <button class="remove_from_cart" onclick="removeFromCart('Air Jordan 6 Rings', 10030.00)">Remove from Cart</button></div>
+                <div class="product">
+                    <h4>Air Jordan Flight Court</h4>
+                    <img src="./asset/JordanFlightCourt_5900.png" alt="Air Jordan Flight Court image" width="100%">
+                    <p>Price: Php 5900.00</p>
+                    <button class="add_to_cart" onclick="addToCart('Air Jordan Flight Court', 5900.00, 'asset/JordanFlightCourt_5900.png')">Add to Cart</button>
+                    <button class="remove_from_cart" onclick="removeFromCart('Air Jordan Flight Court', 5900.00)">Remove from Cart</button>
                 </div>
                 <div class="product">
-                    <h4>Squeezy Milky</h4>
-                    <img src="./asset/squeezy_milky.png" alt="squeezy milky image" width="100%">
-                    <p>Price: Php 30.00</p>
-                    <button class="add_to_cart" onclick="addToCart('Squeezy Milky', 30.00)">Add to Cart</button>
-                    <button class="remove_from_cart" onclick="removeFromCart('Squeezy Milky', 30.00)">Remove from Cart</button></div>
-                <div class="product">
-                    <h4>Squeezy Milky</h4>
-                    <img src="./asset/squeezy_milky.png" alt="squeezy milky image" width="100%">
-                    <p>Price: Php 30.00</p>
-                    <button class="add_to_cart" onclick="addToCart('Squeezy Milky', 30.00)">Add to Cart</button>
-                    <button class="remove_from_cart" onclick="removeFromCart('Squeezy Milky', 30.00)">Remove from Cart</button>
+                    <h4>Air Jordan Spizike Low</h4>
+                    <img src="./asset/JordanSpizikeLow9440_.png" alt="Air Jordan Spizike Low image" width="100%">
+                    <p>Price: Php 9440.00</p>
+                    <button class="add_to_cart" onclick="addToCart('Air Jordan Spizike Low', 9440.00, 'asset/JordanSpizikeLow9440_.png')">Add to Cart</button>
+                    <button class="remove_from_cart" onclick="removeFromCart('Air Jordan Spizike Low', 9440.00)">Remove from Cart</button>
                 </div>
                 <div class="product">
-                    <h4>Squeezy Milky</h4>
-                    <img src="./asset/squeezy_milky.png" alt="squeezy milky image" width="100%">
-                    <p>Price: Php 30.00</p>
-                    <button class="add_to_cart" onclick="addToCart('Squeezy Milky', 30.00)">Add to Cart</button>
-                    <button class="remove_from_cart" onclick="removeFromCart('Squeezy Milky', 30.00)">Remove from Cart</button>
+                    <h4>Jumpman MVP</h4>
+                    <img src="./asset/JumpmanMVP_8260.png" alt="Jumpman MVP image" width="100%">
+                    <p>Price: Php 8260.00</p>
+                    <button class="add_to_cart" onclick="addToCart('Jumpman MVP', 8260.00, 'asset/JumpmanMVP_8260.png')">Add to Cart</button>
+                    <button class="remove_from_cart" onclick="removeFromCart('Jumpman MVP', 8260.00)">Remove from Cart</button></div>
+                <div class="product">
+                    <h4>Luka 4 Space Navigator</h4>
+                    <img src="./asset/Luka4SpaceNavigator_7670.png" alt="Luka 4 Space Navigator" width="100%">
+                    <p>Price: Php 7670.00</p>
+                    <button class="add_to_cart" onclick="addToCart('Luka 4 Space Navigator', 7670.00, 'asset/Luka4SpaceNavigator_7670.png')">Add to Cart</button>
+                    <button class="remove_from_cart" onclick="removeFromCart('Luka 4 Space Navigator', 7670.00)">Remove from Cart</button>
                 </div>
                 <div class="product">
-                    <h4>Squeezy Milky</h4>
-                    <img src="./asset/squeezy_milky.png" alt="squeezy milky image" width="100%">
-                    <p>Price: Php 30.00</p>
-                    <button class="add_to_cart" onclick="addToCart('Squeezy Milky', 30.00)">Add to Cart</button>
-                    <button class="remove_from_cart" onclick="removeFromCart('Squeezy Milky', 30.00)">Remove from Cart</button>
+                    <h4>Tatum 3</h4>
+                    <img src="./asset/Tatum3_7375.png" alt="Tatum 3" width="100%">
+                    <p>Price: Php 7375.00</p>
+                    <button class="add_to_cart" onclick="addToCart('Tatum 3', 7375.00, 'asset/Tatum3_7375.png')">Add to Cart</button>
+                    <button class="remove_from_cart" onclick="removeFromCart('Tatum 3', 7375.00)">Remove from Cart</button>
+                </div>
+                <div class="product">
+                    <h4>Zion 4</h4>
+                    <img src="./asset/Zion4_8260.png" alt="Zion 4" width="100%">
+                    <p>Price: Php 8260.00</p>
+                    <button class="add_to_cart" onclick="addToCart('Zion 4', 8260.00, 'asset/Zion4_8260.png')">Add to Cart</button>
+                    <button class="remove_from_cart" onclick="removeFromCart('Zion 4', 8260.00)">Remove from Cart</button>
                 </div>
                 
             </div>
@@ -125,9 +123,11 @@
 </div>
 
     <aside>
-        <div id="cart">
-            <h2 style="font-family: Oswald;">CUSTOMER'S CART</h2>
-            <ul id="products"></ul>
+        <div class="cart" id="cart">
+            <p style="font-family: Oswald;">CUSTOMER'S CART</p>
+            <div id="products"></div>
+
+            <div class="cart-items"></div>
             <div id="totalPrice"></div>
         </div>
     </aside>

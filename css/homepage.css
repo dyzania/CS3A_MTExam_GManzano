@@ -1,6 +1,8 @@
+
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Comfortaa';
 }
 header {
     width: 100%;
@@ -12,6 +14,7 @@ nav {
     display: grid;
     grid-template-columns: 5fr 1fr 1fr;
     background-color: black;
+    font-family: 'Oswald';
 }
 nav > .buttons {
     background-color:black;
@@ -20,7 +23,6 @@ nav > .buttons {
     text-align: center;
     align-content: center;
     height: 100px;
-   
 }
 nav > .buttons > a {
     text-decoration: none;
@@ -59,7 +61,10 @@ img {
     background-image: url('../AirJordan4Retro_12685.png');
     background-size: cover;
 }
-
+.as-cntnt-wrapper {
+    position: sticky;
+    top: 0;
+}
 footer {
     height: 120px;
     text-align: center;
