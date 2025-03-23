@@ -61,13 +61,12 @@ function updateCartDisplay() {
                              Price: Php ${cart[product].totalPrice.toFixed(2)}`;
         listItem.classList.add("list_of_items");
 
-
         const img = document.createElement('img');
         img.src = cart[product].image;
         img.alt = product;
-        img.style.width = "40%";
+        img.style.width = "30%";
         img.style.height = "auto";
-        img.style.margin = "12px";
+        img.style.marginRight = "8px";
         listItem.appendChild(img);
         cartList.appendChild(listItem);
     }
