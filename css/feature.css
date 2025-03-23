@@ -29,8 +29,10 @@ main {
 }
 
 .feature {
+    margin: 5px;
     width: auto;
     display: flex;
+    justify-content: space-evenly;
     flex-direction: column;
     padding: 10px;
     text-align: center;
@@ -40,7 +42,7 @@ main {
 .feature > p {
     font-size: clamp(1px, 2vw, 16px);
     position: relative;
-    top: 50px;
+    top: 60px;
 }
 
 .feature > img {
@@ -81,7 +83,7 @@ nav > p {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     padding: 4px 12px 4px 12px;
     gap: 12px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
 
 }
 .grid > div {
@@ -136,9 +138,11 @@ nav > p {
 
 aside {
     background-color: #ffffff;
-    margin-top: 0;
+    margin-top: 4px;
+    margin-bottom: 4px;
     font-size: clamp(2px, 2vw, 16px);
     height: auto;
+    border: 1px solid grey;
 }   
 aside > .cart {
     display: grid;
