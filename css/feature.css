@@ -14,8 +14,9 @@ nav {
     background-color: black;}
 .hero-wrapper {
         width: 100%;
-        height: 70vh;        
-        background-color: aqua;
+        height: 70vh; 
+        background: linear-gradient(90deg, white, black);       
+        background-color: rgba(48, 113, 113, 0.584);    
         display: flex;
         justify-content: center;
         align-items: center;
@@ -32,30 +33,19 @@ aside {
         margin-bottom: 4px;
         font-size: clamp(2px, 2vw, 16px);
         height: auto;
-        border: 2px solid black;
-        border-radius: 12px;}
+        border: 2px solid black;}
 .feature {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
     margin: 5px 5px 5px 5px;
     gap: 12px;
     text-align: center;
-    background-color: rgb(255, 255, 255);
-}
-.feature > p {
-    font-size: clamp(1px, 2vw, 16px);
-    display: flex;
-    position: static;
-    top: 60px;
-}
-
+    background-color: rgb(255, 255, 255);}
 .feature > img {
     width: auto;
     max-width: 100%;
     height: auto;
-    margin-bottom: 12px;
-    border-radius: 12px;
-}
+    margin-bottom: 12px;}
 
 img {
     height: 250px;  
@@ -91,7 +81,6 @@ nav > p {
     background-color: rgb(255, 255, 255);
     border: 2px solid black;
     margin: 0px 5px 5px 5px;
-    border-radius: 12px;
 
 }
 .grid > div {
@@ -106,12 +95,10 @@ nav > p {
     flex-direction: column;
     align-items: center;
     background: #f9f9f9;
-    border-radius: 12px;
 }
 .grid img {
     max-width: 150px; /* Limits image size */
     height: auto;
-    border-radius: 12px;
 }
 .grid p {
     font-size: 14px; /* Adjust font size */
@@ -137,9 +124,6 @@ nav > p {
     width: 60%;
 }
     
-
-
-  
 aside > .cart {
     display: grid;
     padding-bottom: 2px;
@@ -147,7 +131,6 @@ aside > .cart {
     text-align: center;
     position: sticky;
     background-color: aliceblue;
-    border-radius: 12px;
 }
 
 .cart > p {
@@ -155,7 +138,6 @@ aside > .cart {
     background-color: grey;
     padding: 12px;
     margin: 5px 5px ;
-    border-radius: 12px;
 }
 
 aside > p { 
