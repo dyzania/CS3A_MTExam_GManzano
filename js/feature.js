@@ -48,26 +48,26 @@ function calculateTotalPrice() {
 
 function updateCartDisplay() {
     const cartList = document.getElementById('products');
-    cartList.innerHTML = ''; // Clear the current cart list
+    cartList.innerHTML = ''; // clear the current cart list
 
     
 
-    // Loop through the cart object and display each product
+    // loop through the cart object and display each product
     for (let product in cart) {
 
         const listItem = document.createElement('div');
-        listItem.innerText = `${product}
-                             Quantity: ${cart[product].quantity} 
+        listItem.innerText = `${product} \n
+                             Quantity: ${cart[product].quantity} \n
                              Price: Php ${cart[product].totalPrice.toFixed(2)}`;
         listItem.classList.add("list_of_items");
+
 
         const img = document.createElement('img');
         img.src = cart[product].image;
         img.alt = product;
-        img.style.width = "50%";
-        img.style.justifySelf="center";
-        img.style.height = "auto"
-        img.style.marginTop = "10px";
+        img.style.width = "40%";
+        img.style.height = "auto";
+        img.style.margin = "12px";
         listItem.appendChild(img);
         cartList.appendChild(listItem);
     }
