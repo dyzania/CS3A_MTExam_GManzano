@@ -67,8 +67,8 @@ function updateCartDisplay() {
         img.style.width = "30%";
         img.style.height = "auto";
         img.style.marginRight = "8px";
-        listItem.appendChild(img);
         cartList.appendChild(listItem);
+        listItem.appendChild(img);
     }
     const totalPrice = calculateTotalPrice();
     const totalPriceElement = document.createElement('div');

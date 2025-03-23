@@ -36,12 +36,24 @@ aside {
 .feature {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
-    margin: 5px 5px 5px 5px;
+    margin: 5px;
     gap: 12px;
     text-align: center;
     background-color: rgb(255, 255, 255);}
-.feature > img {
-    width: auto;
+
+.ftr_img > p {
+    background-color: black;
+    margin: 0;
+    height: 15%;
+    font-size: clamp(4px, 1vw, 20px);
+    justify-items: center;
+    align-content: center;
+}
+.ftr_img {
+    padding: 0;
+}
+.ftr_img > img {
+    width: 100%;
     max-width: 100%;
     height: auto;
     margin-bottom: 12px;}
@@ -79,7 +91,7 @@ nav > p {
     gap: 12px;
     background-color: rgb(255, 255, 255);
     border: 2px solid black;
-    margin: 0px 5px 5px 5px;
+    margin: 50px 5px 5px 5px;
 
 }
 .grid > div {
@@ -99,7 +111,7 @@ nav > p {
     max-width: 150px; /* Limits image size */
     height: auto;
 }
-.grid p {
+.grid > p {
     font-size: 14px; /* Adjust font size */
     margin: 12px;
     word-wrap: break-word; /* Prevents text overflow */
@@ -127,13 +139,11 @@ aside > .cart {
     display: grid;
     padding-bottom: 2px;
     top: 0;
-    text-align: center;
     position: sticky;
     background-color: aliceblue;
 }
 
 .cart > p {
-    font-size: clamp(14px, 22px, 22px);
     background-color: grey;
     padding: 12px;
     margin: 5px 5px ;
@@ -162,13 +172,12 @@ img {
     background-color: rgb(93, 88, 88);
     padding: 8px;
     color: black;
-    margin: 5px;
+    margin: 10px;
     border-radius: 1px;
     font-family: 'Comfortaa';
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
     font-size: clamp(4px, 1vw, 20px);
 }
 footer {
