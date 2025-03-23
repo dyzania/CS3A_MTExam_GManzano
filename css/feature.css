@@ -97,8 +97,8 @@ nav > p {
 .grid > div {
     background-color: gray;
     font-size: clamp(14px, 2vw, 16px);
-    width: 100%; /* Ensures responsiveness */
-    max-width: 400px; /* Limits maximum size */
+    width: 100%;
+    max-width: 400px;
     padding: 2px;
     border: 2px solid #ddd;
     text-align: center;
@@ -108,13 +108,13 @@ nav > p {
     background: #f9f9f9;
 }
 .grid img {
-    max-width: 150px; /* Limits image size */
+    max-width: 150px; 
     height: auto;
 }
 .grid > p {
-    font-size: 14px; /* Adjust font size */
+    font-size: 14px; 
     margin: 12px;
-    word-wrap: break-word; /* Prevents text overflow */
+    word-wrap: break-word;
     padding: 0;
 }
 .grid button {
